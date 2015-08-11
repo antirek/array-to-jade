@@ -1,0 +1,22 @@
+{
+  "name": "array-to-jade",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/antirek/array-to-jade.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antirek/array-to-jade/issues"
+  },
+  "homepage": "https://github.com/antirek/array-to-jade",
+  "dependencies": {
+    "jade": "^1.11.0"
+  }
+}

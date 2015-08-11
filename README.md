@@ -1,14 +1,19 @@
 # jso2jade
 
-prepare some js object and parse as jade template to html
+prepare some js object and render as jade template to html
 
-Usage
-=====
+
+## Install
+
+> npm install jso2jade [--save]
+
+
+
+## Usage
 
 `````javascript
 
-var jso2jade = require('./index');
-
+var jso2jade = require('jso2jade');
 var jade = require('jade');
 
 var arr = [{

@@ -2,18 +2,16 @@ var jso2jade = require('./index');
 
 var jade = require('jade');
 
-//var converter = new arr2jade();
-
 var arr = [{
-  'div.main': [{
-    'p': '1212'
+  'div.content': [{
+    'h3': 'Hello, ' + user.name
     },
-    'p sdfdsf',
-    'p 224344',
+    'p Congratulations for you!',
+    'p You win more than life on Earth',
     { 
-      'div.sp': {
-        'h3': 'Hello',
-        'p': 'ogogo',
+      'div.conditions': {
+        'h5.attention': 'Attention',
+        'p': 'New conditions',
         'div' :
         [
           'hr',
@@ -22,10 +20,10 @@ var arr = [{
       }
     }
     ]
-  },'p colo'];
+  },
+  'div.contacts Send me email'];
 
 
-var str = jso2jade(arr);
-var html = jade.render(str);
+var html = jade.render(jso2jade(arr));
 
 console.log(html);

@@ -1,8 +1,6 @@
 'use strict';
 
-var Converter = function (settings) {
-
-  var options = {};
+module.exports = (function () {
 
   var recursiveParser = function(obj, prepender){
     var prepend = prepender || '';
@@ -25,7 +23,7 @@ var Converter = function (settings) {
             for (var key in obj) {
               if (typeof obj[key] == 'string') {
                 result_array.push(prepend + key + ' ' + obj[key])
-              }else{
+              } else {
                 result_array.push(prepend + key);
                 recursiveParser(obj[key], prepend + '  ').forEach(function (it) {
                   result_array.push(it);
@@ -50,7 +48,6 @@ var Converter = function (settings) {
 
   return {
     prepare: prepare
-  }
-};
+  };
 
-module.exports = Converter;
+})().prepare;

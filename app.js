@@ -1,8 +1,8 @@
-var arr2jade = require('./index');
+var jso2jade = require('./index');
 
 var jade = require('jade');
 
-var converter = new arr2jade();
+//var converter = new arr2jade();
 
 var arr = [{
   'div.main': [{
@@ -25,7 +25,7 @@ var arr = [{
   },'p colo'];
 
 
-var str = converter.prepare(arr);
+var str = jso2jade(arr);
 var html = jade.render(str);
 
 console.log(html);

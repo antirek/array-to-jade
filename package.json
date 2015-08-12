@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jasmine"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/antirek/array-to-jade",
   "dependencies": {
+  },
+  "devDependencies": {
+    "jasmine": "^2.3.2",
     "jade": "^1.11.0"
   }
 }
